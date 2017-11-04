@@ -1,24 +1,38 @@
 #!virtual/bin/python3.6
 import random
 import time
-import webbrowser
+import webbrowser  # module to open web browser
 
 
 def read_posts(sessions):
+    '''
+    Function that reads through the links
+    Shuffles the links
+    and creates a random list of articles to read for each sessions
+    '''
 
     with open('articles.txt', 'r') as handle:
         articles = handle.readlines()
-        random.shuffle(articles)
+        random.shuffle(articles)  # shuffles all the articles
+        # chooses a select number of articles for that session
         chosen_articles = random.sample(articles, k=sessions)
 
     return chosen_articles
 
 
 def open_browser(link):
-    webbrowser.open_new_tab(link)
+    '''
+    Function that opens a browser tab and displays the link
+    '''
+
+    webbrowser.open_new_tab(link)  # Opens a new browser tab
 
 
 def get_int_input():
+    '''
+    Function to get a user Input convert it to
+    an Integer and validates it
+    '''
 
     while True:
         try:
