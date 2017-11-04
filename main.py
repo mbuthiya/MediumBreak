@@ -34,7 +34,7 @@ def main():
     sessions = get_int_input()
 
     print('How many Minutes per session?')
-    time_per_session = get_int_input()
+    time_per_session = get_int_input() * 60
 
     posts = read_posts(sessions)
     sessions_run = 0
