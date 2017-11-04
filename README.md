@@ -21,7 +21,7 @@ $ python3.6 main.py
 ```
 ### Contribution.
 
-You can clone or fork the project. Apply the changes and then create a pull
+You can clone or fork the project. Create your own branch. Apply the changes and then create a pull
 request.
 
 ### Issue
